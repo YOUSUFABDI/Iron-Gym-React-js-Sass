@@ -1,0 +1,19 @@
+@use './variables.scss' as mixin;
+
+//Bebas Neue Font
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+//Poppins Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,900&display=swap');
+
+// font-family: 'Bebas Neue', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+}

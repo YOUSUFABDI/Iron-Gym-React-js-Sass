@@ -1,0 +1,121 @@
+@use '../../variables.scss' as mixin;
+
+.header {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  color: mixin.$white;
+  padding: mixin.$mx-98;
+  background-color: transparent;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.875rem;
+
+    span {
+      color: mixin.$white;
+
+      &:not(:first-child) {
+        color: mixin.$red;
+      }
+    }
+  }
+
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 32px 0;
+    flex: 1;
+
+    .nav_links_btn {
+      text-decoration: none;
+      color: mixin.$white;
+      font-family: 'Bebas Neue', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.3125rem;
+      transition: all 0.5s ease;
+
+      &.activated {
+        color: mixin.$red;
+      }
+    }
+  }
+
+  .start_btn {
+    background-color: mixin.$red;
+    color: mixin.$white;
+    padding: 16px 40px;
+    font-size: 1.3125rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 97px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  // Tablet
+  @media screen and (max-width: 900px) {
+    height: fit-content;
+    justify-content: space-between;
+    padding: 0;
+    gap: 0;
+
+    .logo {
+      align-self: flex-start;
+      margin: mixin.$mx-30;
+    }
+
+    .nav_links {
+      flex-direction: column;
+    }
+
+    .nav_menu {
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      flex-direction: column;
+      padding-bottom: 30px;
+      width: 100%;
+      transition: all 0.5s ease;
+
+      &.active {
+        background: mixin.$black;
+        left: 0;
+        opacity: 1;
+        transition: all 0.6s ease;
+        z-index: 1;
+      }
+    }
+
+    .menu_icon {
+      display: block;
+      margin: mixin.$mx-30;
+      cursor: pointer;
+    }
+  }
+}

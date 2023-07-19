@@ -1,0 +1,6 @@
+@use './../../variables.scss' as mixin;
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
