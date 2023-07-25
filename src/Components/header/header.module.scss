@@ -78,7 +78,7 @@
   }
 
   // Tablet
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: mixin.$sm-tablet) {
     height: fit-content;
     justify-content: space-between;
     padding: 0;

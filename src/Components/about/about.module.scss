@@ -1,0 +1,146 @@
+@use './../../variables.scss' as mixin;
+
+.wrapper {
+  position: relative;
+  padding: mixin.$mx-98;
+  color: mixin.$white;
+  height: 768px;
+
+  .container {
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    gap: 193px;
+
+    .con_left {
+      flex: 1;
+      margin-top: 113px;
+
+      .con_title {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        font-size: 5.6875rem;
+        font-weight: 700;
+        font-family: 'Bebas Neue', sans-serif;
+        line-height: 96px;
+
+        .experiance {
+          color: mixin.$red;
+        }
+      }
+
+      .con_pargraph {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        line-height: 24px;
+        padding-bottom: 56px;
+      }
+
+      .about_btn {
+        padding: 24px 40px;
+        border: 1px solid mixin.$red;
+        background-color: transparent;
+        color: mixin.$red;
+        font-size: 1.3125rem;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 700;
+        line-height: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .con_right {
+      position: relative;
+      flex: 1;
+
+      .b_t {
+        position: absolute;
+        left: -70px;
+        top: 80px;
+        border: 1px solid mixin.$red;
+        width: 384px;
+        height: 496px;
+      }
+
+      .img {
+        position: relative;
+        z-index: 9;
+        margin-top: 136px;
+      }
+
+      .b_b {
+        position: absolute;
+        right: 44px;
+        top: 200px;
+        border: 1px solid mixin.$white-boder;
+        width: 384px;
+        height: 496px;
+      }
+    }
+  }
+
+  .layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.8999999761581421;
+  }
+
+  //   Tablet
+  @media screen and (max-width: mixin.$tablet) {
+    padding: mixin.$mx-30;
+    height: 1500px;
+
+    .container {
+      gap: 0;
+      flex-direction: column;
+
+      .con_left {
+        .con_title {
+          font-size: 3rem;
+          line-height: 70px;
+        }
+      }
+
+      .con_right {
+        .img {
+          transform: translateX(50%);
+        }
+
+        .b_t {
+          left: 0;
+        }
+
+        .b_b {
+          display: none;
+        }
+      }
+    }
+  }
+  // Mobile
+  @media screen and (max-width: mixin.$mobile) {
+    height: 1600px;
+
+    .container {
+      .con_right {
+        .b_t,
+        .b_b {
+          display: none;
+        }
+
+        .img {
+          transform: translateX(0%);
+          width: 90%;
+        }
+      }
+    }
+  }
+}

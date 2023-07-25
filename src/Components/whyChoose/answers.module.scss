@@ -1,0 +1,42 @@
+@use './../../variables.scss' as mixin;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid mixin.$red;
+  padding: 24px 0;
+  padding-left: 40px;
+
+  .id {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .tit_ans {
+    display: flex;
+    flex-direction: column;
+
+    .tit {
+      color: mixin.$red;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 32px;
+    }
+
+    .ans {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+
+  // Mobile
+  @media screen and (max-width: mixin.$mobile) {
+    padding-left: 20px;
+  }
+}

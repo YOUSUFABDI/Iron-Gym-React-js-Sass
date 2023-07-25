@@ -88,12 +88,12 @@
   }
 
   // Tablet
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: mixin.$sm-tablet) {
     margin: mixin.$mx-30;
   }
 
   // Mobile
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: mixin.$mobile) {
     .left {
       margin-top: 100px;
 

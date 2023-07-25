@@ -1,7 +1,7 @@
 import header from './header.module.scss'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   const [isClick, setIsClick] = useState(false)
