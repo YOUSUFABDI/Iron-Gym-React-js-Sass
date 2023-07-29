@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "trainerName": "Borney Exitied",
+    "trainerImage": "trainer-img1.png",
+    "trainerRate": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "id": 2,
+    "trainerName": "Elsa Windia",
+    "trainerImage": "trainer-img2.png",
+    "trainerRate": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "id": 3,
+    "trainerName": "Geourge Aryo",
+    "trainerImage": "trainer-img3.png",
+    "trainerRate": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "id": 4,
+    "trainerName": "Angela Mellisa",
+    "trainerImage": "trainer-img4.png",
+    "trainerRate": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "id": 5,
+    "trainerName": "Aaron Brogden",
+    "trainerImage": "trainer-img5.png",
+    "trainerRate": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "id": 6,
+    "trainerName": "Victor Freitas",
+    "trainerImage": "trainer-img6.png",
+    "trainerRate": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "id": 7,
+    "trainerName": "mob alizadeh",
+    "trainerImage": "trainer-img7.png",
+    "trainerRate": "⭐⭐⭐⭐⭐"
+  }
+]

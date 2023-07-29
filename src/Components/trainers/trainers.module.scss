@@ -1,0 +1,96 @@
+@use './../../variables.scss' as mixin;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: mixin.$light-dark;
+  color: mixin.$white;
+  padding: mixin.$mx-98;
+  padding-bottom: 130px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .top {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      padding-top: 70px;
+      padding-bottom: 16px;
+      text-align: center;
+      font-size: 5.6875rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      line-height: 96px;
+      text-transform: uppercase;
+
+      span {
+        &:not(:first-child) {
+          color: mixin.$red;
+        }
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  .parent {
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+    padding-top: 80px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  .cbtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 56px;
+
+    button {
+      background-color: mixin.$light-black;
+      width: 8px;
+      height: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: mixin.$red;
+    }
+
+    .disable {
+      pointer-events: none;
+    }
+  }
+
+  // Tablet
+  @media screen and (max-width: mixin.$tablet) {
+    padding: mixin.$mx-30;
+    padding-bottom: 130px;
+  }
+
+  // Mobile
+  @media screen and (max-width: mixin.$mobile) {
+    .top {
+      .title {
+        font-size: 3rem;
+        line-height: 60px;
+      }
+    }
+  }
+}

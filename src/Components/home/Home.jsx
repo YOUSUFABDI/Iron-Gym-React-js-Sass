@@ -4,6 +4,7 @@ import heroBgImage from '../../assets/images/hero.png'
 import Header from '../header/Header'
 import WhyChoose from '../whyChoose/WhyChoose'
 import About from '../about/About'
+import Trainers from '../trainers/Trainers'
 
 const heroBgImg = {
   background: `linear-gradient(90deg, #000 3.13%, rgba(0, 0, 0, 0.07) 100%), url('${heroBgImage}'), lightgray -40px -0.065px / 111.667% 104.7%`,
@@ -22,6 +23,7 @@ const Home = () => {
       </section>
       <WhyChoose />
       <About />
+      <Trainers />
     </main>
   )
 }
