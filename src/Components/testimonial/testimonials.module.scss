@@ -1,0 +1,67 @@
+@use './../../variables.scss' as mixin;
+
+.wrapper {
+  position: relative;
+  height: 728px;
+  padding: mixin.$mx-98;
+  color: white;
+
+  .layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    background: rgba(0, 0, 0, 1);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    padding: 72px;
+
+    .title {
+      text-align: center;
+      color: mixin.$white;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 5.6875rem;
+      font-weight: 700;
+      line-height: 96px;
+      padding-bottom: 80px;
+
+      span {
+        color: mixin.$red;
+      }
+    }
+  }
+
+  // Tablet
+  @media screen and (max-width: mixin.$tablet) {
+    padding: mixin.$mx-30;
+    .container {
+      width: 100%;
+
+      .title {
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  // Mobile
+  @media screen and (max-width: mixin.$mobile) {
+    .container {
+      padding: 0;
+      height: 100%;
+
+      .title {
+        font-size: 1.9rem;
+        line-height: 50px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

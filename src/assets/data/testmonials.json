@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "info": "I am extremely grateful for the positive impact gym training has had on my life; through consistent training, expert guidance from coaches, and access to top-notch facilities, I have witnessed a remarkable transformation in strength, endurance, and overall fitness levels.",
+    "rate": "⭐⭐⭐⭐⭐",
+    "name": "Johny Breaker",
+    "trainerImage": "trainer-test-img-1.png"
+  },
+  {
+    "id": 2,
+    "info": "I am extremely grateful for the positive impact gym training has had on my life; through consistent training, expert guidance from coaches, and access to top-notch facilities, I have witnessed a remarkable transformation in strength, endurance, and overall fitness levels.",
+    "rate": "⭐⭐⭐⭐",
+    "name": "Geourge Aryo",
+    "trainerImage": "trainer-test-img-1.png"
+  }
+]
