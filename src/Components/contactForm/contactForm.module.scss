@@ -1,0 +1,177 @@
+@use './../../variables.scss' as mixin;
+
+.contact_container {
+  background-color: mixin.$light-dark;
+  color: mixin.$white;
+  padding: mixin.$mx-98;
+  padding-top: 128px;
+  padding-bottom: 38px;
+
+  .contact_wrapper {
+    position: relative;
+    height: 674px;
+
+    .contact_img {
+      position: absolute;
+      top: -56px;
+    }
+
+    .right_contact {
+      position: absolute;
+      top: 62px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+
+      .right_info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h1 {
+          font-family: 'Bebas Neue', sans-serif;
+          font-size: 5.6875rem;
+          font-weight: 700;
+          line-height: 96px;
+          color: mixin.$white;
+
+          .make_red {
+            color: mixin.$red;
+          }
+        }
+
+        p {
+          color: mixin.$light-white;
+          font-family: 'Poppins', sans-serif;
+          font-size: 1rem;
+          font-weight: 300;
+          line-height: 24px;
+          width: 602px;
+        }
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        .form_name_phone {
+          display: flex;
+          gap: 24px;
+          width: 507px;
+          padding-bottom: 24px;
+
+          input {
+            background-color: transparent;
+            color: mixin.$white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 24px;
+            width: 100%;
+            height: 56px;
+            border: 1px solid mixin.$white;
+            padding: 16px 24px;
+          }
+        }
+
+        .form_email {
+          width: 507px;
+          padding-bottom: 24px;
+
+          input {
+            background-color: transparent;
+            color: mixin.$white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 24px;
+            width: 100%;
+            height: 56px;
+            border: 1px solid mixin.$white;
+            padding: 16px 24px;
+          }
+        }
+
+        .form_btn {
+          border: 1px solid mixin.$red;
+          height: 72px;
+          width: 173px;
+          background-color: transparent;
+          color: mixin.$red;
+          font-size: 1.3125rem;
+          font-weight: 700;
+          line-height: 24px;
+          font-family: 'Bebas Neue', sans-serif;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  // Tablet
+  @media screen and (max-width: mixin.$tablet) {
+    padding: 0;
+    padding: mixin.$mx-30;
+
+    .svg_border {
+      display: none;
+    }
+
+    .contact_img {
+      display: none;
+    }
+
+    .right_contact {
+      left: 30px;
+
+      .right_info {
+        gap: 40px;
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  // Mobile
+  @media screen and (max-width: mixin.$mobile) {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+
+    .right_contact {
+      left: 0;
+    }
+
+    .right_info {
+      h1 {
+        font-size: 4rem !important;
+        line-height: 70px !important;
+      }
+
+      p {
+        width: 320px !important;
+      }
+    }
+
+    .form {
+      width: 100%;
+    }
+
+    .form_name_phone {
+      flex-direction: column;
+
+      input {
+        max-width: 60% !important;
+      }
+    }
+
+    .form_email {
+      input {
+        max-width: 60% !important;
+      }
+    }
+  }
+}
