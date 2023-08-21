@@ -1,4 +1,6 @@
 import Header from '../Components/header/Header'
+import ContactForm from '../Components/contactForm/ContactForm'
+import Footer from '../Components/footer/Footer'
 
 const StartNowPage = () => {
   return (
@@ -9,9 +11,9 @@ const StartNowPage = () => {
       }}
     >
       <Header />
-      <section style={{ color: 'white', textAlign: 'center' }}>
-        <h1>StartNowPage</h1>
-        <h1>Comming soon</h1>
+      <section>
+        <ContactForm />
+        <Footer />
       </section>
     </div>
   )

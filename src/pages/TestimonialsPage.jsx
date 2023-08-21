@@ -1,18 +1,20 @@
 import Header from '../Components/header/Header'
+import Testimonials from '../Components/testimonial/Testimonials'
+import Footer from '../Components/footer/Footer'
 
 const TestimonialsPage = () => {
   return (
     <div
       style={{
-        background: '#121212',
+        background: '#000000',
         height: '100vh',
         width: '100%',
       }}
     >
       <Header />
       <section style={{ color: 'white', textAlign: 'center' }}>
-        <h1>TestimonialsPage</h1>
-        <h1>Comming soon</h1>
+        <Testimonials />
+        <Footer />
       </section>
     </div>
   )

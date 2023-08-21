@@ -7,6 +7,7 @@ import About from '../about/About'
 import Trainers from '../trainers/Trainers'
 import Testimonial from '../testimonial/Testimonials'
 import ContactForm from '../contactForm/ContactForm'
+import Footer from '../footer/Footer'
 
 const heroBgImg = {
   background: `linear-gradient(90deg, #000 3.13%, rgba(0, 0, 0, 0.07) 100%), url('${heroBgImage}'), lightgray -40px -0.065px / 111.667% 104.7%`,
@@ -28,6 +29,7 @@ const Home = () => {
       <Trainers />
       <Testimonial />
       <ContactForm />
+      <Footer />
     </main>
   )
 }

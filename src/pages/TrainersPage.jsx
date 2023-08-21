@@ -1,4 +1,6 @@
 import Header from '../Components/header/Header'
+import Trainers from '../Components/trainers/Trainers'
+import Footer from '../Components/footer/Footer'
 
 const TrainersPage = () => {
   return (
@@ -11,8 +13,8 @@ const TrainersPage = () => {
     >
       <Header />
       <section style={{ color: 'white', textAlign: 'center' }}>
-        <h1>TrainersPage</h1>
-        <h1>Comming soon</h1>
+        <Trainers />
+        <Footer />
       </section>
     </div>
   )

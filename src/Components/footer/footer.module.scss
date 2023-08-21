@@ -1,0 +1,119 @@
+@use './../../variables.scss' as mixin;
+
+.footer_cotainer {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  background-color: mixin.$black;
+  color: mixin.$white;
+  padding: mixin.$mx-98;
+  padding-top: 72px;
+
+  .footer_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+
+      span {
+        color: mixin.$red;
+      }
+    }
+
+    .footer_nav_links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      list-style: none;
+
+      li {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.3125rem;
+        font-weight: 700;
+        line-height: 24px;
+
+        a {
+          text-decoration: none;
+          color: mixin.$white;
+        }
+
+        .nav_links_btn {
+          text-transform: uppercase;
+          transition: all 0.5s ease;
+
+          &.activated {
+            color: mixin.$red;
+          }
+        }
+      }
+    }
+  }
+
+  .footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-top: 1px solid mixin.$light-white;
+    padding-top: 20px;
+
+    .line {
+      background-color: mixin.$light-white;
+      position: absolute;
+      top: 5590px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      padding: 0;
+      display: none;
+    }
+
+    span {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      line-height: 16px;
+    }
+  }
+
+  //   Tablet screens
+  @media screen and (max-width: mixin.$tablet) {
+    .line {
+      display: none;
+    }
+
+    .footer_bottom {
+      border-top: 1px solid mixin.$light-white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  //   Mobile screens
+  @media screen and (max-width: mixin.$mobile) {
+    padding: mixin.$mx-30;
+    padding-top: 30px;
+    gap: 30px;
+
+    .footer_nav_links {
+      flex-direction: column;
+    }
+
+    .footer_bottom {
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid mixin.$light-white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .line {
+        display: none;
+      }
+    }
+  }
+}
