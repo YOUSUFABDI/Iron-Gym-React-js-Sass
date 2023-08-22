@@ -2,7 +2,7 @@ import trainer from './trainer.module.scss'
 
 const Trainer = ({ trainerName, trainerImage, trainerRate }) => {
   const bgImage = {
-    backgroundImage: `url('./../../src/assets/images/${trainerImage}')`,
+    backgroundImage: `url(${trainerImage})`,
     backgroundRepeat: 'no-repeat',
     objectFit: 'cover',
   }
