@@ -69,7 +69,7 @@ const Footer = () => {
       <div className={footerStyle.footer_bottom}>
         <div className={footerStyle.line}></div>
         <span>Privacy | Terms and condition</span>
-        <span>&copy; 2023 All rights reserved. IronGym Company</span>
+        <span>&copy; 2024 All rights reserved. IronGym Company</span>
       </div>
     </section>
   )
